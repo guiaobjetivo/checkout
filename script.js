@@ -1,13 +1,13 @@
-// Configuração do tempo (em segundos)
+// ConfiguraÃ§Ã£o do tempo (em segundos)
 let timeLeft = 600; // 10 minutos
 
-// Função para atualizar o cronômetro
+// FunÃ§Ã£o para atualizar o cronÃ´metro
 function updateTimer() {
     const hours = Math.floor(timeLeft / 3600);
     const minutes = Math.floor((timeLeft % 3600) / 60);
     const seconds = timeLeft % 60;
 
-    // Formatação para dois dígitos
+    // FormataÃ§Ã£o para dois dÃ­gitos
     const formattedTime = 
         String(hours).padStart(2, '0') + ':' +
         String(minutes).padStart(2, '0') + ':' +
@@ -17,25 +17,25 @@ function updateTimer() {
 
     if (timeLeft === 0) {
         clearInterval(timerInterval);
-        alert("Tempo esgotado! Faça o Pagamento ou perderá o desconto.");
+        alert("Tempo esgotado! FaÃ§a o Pagamento ou perderÃ¡ o desconto.");
     } else {
         timeLeft--;
     }
 }
 
-// Atualiza o cronômetro a cada segundo
+// Atualiza o cronÃ´metro a cada segundo
 const timerInterval = setInterval(updateTimer, 1000);
 
-// Função para gerar QR Code PIX
+// FunÃ§Ã£o para gerar QR Code PIX
 document.getElementById('pix-button').addEventListener('click', () => {
     const qrcodeDiv = document.getElementById('qrcode');
-    qrcodeDiv.innerHTML = ''; // Limpa o conteúdo anterior
+    qrcodeDiv.innerHTML = ''; // Limpa o conteÃºdo anterior
 
     // Dados do PIX (exemplo)
     const pixData = {
         chave: '59.339.636/0001-05', // Chave PIX (CPF, e-mail, telefone, etc.)
-        valor: 36.90, // Valor da transação
-        descricao: 'Promocao por Tempo Limitado', // Descrição opcional
+        valor: 36.90, // Valor da transaÃ§Ã£o
+        descricao: 'Promocao por Tempo Limitado', // DescriÃ§Ã£o opcional
     };
 
     // Gera o QR Code (usando uma biblioteca como QRCode.js)
@@ -47,5 +47,5 @@ const qrcode = new QRCode(qrcodeDiv, {
     });
 */
 
-document.getElementById('qrcodeinfos').innerHTML = '<b>Nome:</b> 59.339.636 MARCOS VINICIUS DA SILVA CNPJ <br><br> Chave Pix Nubank:<br> <br><b>59.339.636/0001-05 </b> <br><br> O Material será entregue no seu Whatsapp.'
+document.getElementById('qrcodeinfos').innerHTML = '<b>Nome:</b> 59.339.636 MARCOS VINICIUS DA SILVA CNPJ <br><br> Chave Pix Nubank:<br> <br><b>59.339.636/0001-05 </b> <br><br> O Material sera entregue no seu Whatsapp.'
 });
