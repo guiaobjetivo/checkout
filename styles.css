@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#timer {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #e74c3c;
+}
+
+#pix-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pix-button:hover {
+    background-color: #2980b9;
+}
+
+#qrcode {
+    margin-top: 20px;
+}
+.priceline{
+color: maroon;
+font-size: 1.2em;
+}
+.price{
+color: green;
+font-size: 1.3em;
+}
