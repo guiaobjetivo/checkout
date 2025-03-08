@@ -1,41 +1,44 @@
+/* Estilos para o body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o wrapper da imagem */
+.image-wrapper {
+    width: 100%; /* Ocupa 100% da largura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    overflow: hidden; /* Evita que a imagem ultrapasse o wrapper */
+    margin-bottom: 20px; /* Espaço entre a imagem e o container */
 }
 
+/* Estilos para a imagem */
+.full-width-img {
+    width: 100%; /* Ocupa 100% da largura do wrapper */
+    height: auto; /* Altura ajustada automaticamente */
+    max-height: 3500px; /* Altura máxima da imagem (ajuste conforme necessário) */
+    object-fit: contain; /* Garante que a imagem inteira seja exibida */
+}
+
+/* Estilos para o container */
 .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.container {
-            max-width: 1200px; /* Defina um tamanho máximo para o container */
-            margin: 0 auto; /* Centraliza o container */
-            padding: 20px; /* Espaçamento interno */
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
 
-h1 {
-    color: #333;
-}
-
-#timer {
-    font-size: 2.5em;
-    margin: 20px 0;
-    color: #e74c3c;
-}
-
+/* Estilos para o botão */
 #pix-button {
     padding: 10px 20px;
     font-size: 1.2em;
@@ -44,27 +47,32 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 #pix-button:hover {
     background-color: #2980b9;
 }
 
+/* Estilos para o timer */
+#timer {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #e74c3c;
+}
+
+/* Estilos para o preço */
+.priceline {
+    color: maroon;
+    font-size: 1.2em;
+}
+
+.price {
+    color: green;
+    font-size: 1.3em;
+}
+
+/* Estilos para o QR Code */
 #qrcode {
     margin-top: 20px;
 }
-.priceline{
-color: maroon;
-font-size: 1.2em;
-}
-.price{
-color: green;
-font-size: 1.3em;
-}
-
-/* Estilos para a imagem */
-        .full-width-img {
-            width: 100%; /* Ocupa 100% da largura do container */
-            height: auto; /* Altura ajustada automaticamente */
-            display: block; /* Remove espaços extras abaixo da imagem */
-        }
