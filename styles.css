@@ -51,3 +51,10 @@ font-size: 1.2em;
 color: green;
 font-size: 1.3em;
 }
+
+/* Estilos para a imagem */
+        .full-width-img {
+            width: 100%; /* Ocupa 100% da largura do container */
+            height: auto; /* Altura ajustada automaticamente */
+            display: block; /* Remove espaços extras abaixo da imagem */
+        }
