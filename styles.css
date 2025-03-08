@@ -15,6 +15,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.container {
+            max-width: 1200px; /* Defina um tamanho máximo para o container */
+            margin: 0 auto; /* Centraliza o container */
+            padding: 20px; /* Espaçamento interno */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
 h1 {
     color: #333;
